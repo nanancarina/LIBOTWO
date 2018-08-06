@@ -10,36 +10,52 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+			<!--fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123466914-1"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+			
+			  gtag('config', 'UA-123466914-1');
+			</script>
 	</head>
 	<body class="index is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1 id="logo"><a href="index.html">Twenty <span>by HTML5 UP</span></a></h1>
+					<h1 id="logo"><a href="index.html">Libo</a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">Welcome</a></li>
-							<li class="submenu">
-								<a href="#">Layouts</a>
-								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li class="submenu">
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Dolore Sed</a></li>
-											<li><a href="#">Consequat</a></li>
-											<li><a href="#">Lorem Magna</a></li>
-											<li><a href="#">Sed Magna</a></li>
-											<li><a href="#">Ipsum Nisl</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
+							<li class="current"><a href="bookstore.html">Bookstore</a></li>
+							<li class="current"><a href="donate.html">Donate</a></li>
+							<li class="current"><a href="donate.html">About</a></li>
+							<li class="current"><a href="contact.html">Contact</a></li>
+							
+							<!--<li class="submenu">-->
+							<!--	<a href="#">Layouts</a>-->
+							<!--	<ul>-->
+							<!--		<li><a href="left-sidebar.html">Left Sidebar</a></li>-->
+							<!--		<li><a href="right-sidebar.html">Right Sidebar</a></li>-->
+							<!--		<li><a href="no-sidebar.html">No Sidebar</a></li>-->
+							<!--		<li><a href="contact.html">Contact</a></li>-->
+							<!--		<li class="submenu">-->
+							<!--			<a href="#">Submenu</a>-->
+							<!--			<ul>-->
+							<!--				<li><a href="#">Dolore Sed</a></li>-->
+							<!--				<li><a href="#">Consequat</a></li>-->
+							<!--				<li><a href="#">Lorem Magna</a></li>-->
+							<!--				<li><a href="#">Sed Magna</a></li>-->
+							<!--				<li><a href="#">Ipsum Nisl</a></li>-->
+							<!--			</ul>-->
+							<!--		</li>-->
+							<!--	</ul>-->
+							<!--</li>-->
 							<li><a href="#" class="button primary">Sign Up</a></li>
 						</ul>
 					</nav>
@@ -55,15 +71,11 @@
 						appropriate (<br />).
 					-->
 					<div class="inner">
-
-						<header>
-							<h2>TWENTY</h2>
-						</header>
-						<p>This is <strong>Twenty</strong>, a free
-						<br />
-						responsive template
-						<br />
-						by <a href="http://html5up.net">HTML5 UP</a>.</p>
+					<!--inside this header is the thing with the lines -->
+						<!--<header>-->
+						<!--	<h2></h2>-->
+						<!--</header>-->
+						<p id = "headerWords">Escape with a good <strong>book</strong></p>
 						<footer>
 							<ul class="buttons stacked">
 								<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
@@ -96,12 +108,12 @@
 								<div class="col-8 col-12-narrower">
 
 									<header>
-										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+										<h2 id = "title">Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
 									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
+									<p>Libo is an online bookstore that collects used books, then restores and resells them. We appeal to both the donor and the seller, as we make the process of donating and buying used books easier and more affordable. Our mission is to operate the best specialty retail business in our field by providing our customers with a more positive outlook on buying used books. We are determined to bring nuances of style and approaches to bookselling that are consistent with the ideals of which our books endorse. </p>
 									<footer>
 										<ul class="buttons">
-											<li><a href="#" class="button">Find Out More</a></li>
+											<li><a href="about.html" class="button">Find Out More</a></li>
 										</ul>
 									</footer>
 
@@ -110,7 +122,7 @@
 
 									<ul class="featured-icons">
 										<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-										<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
+										<li><span class="icon fa-book"><span class="label">Feature 2</span></span></li>
 										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
 										<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
 										<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
@@ -239,6 +251,9 @@
 							<li><a href="#" class="button">LOL Wut</a></li>
 						</ul>
 					</footer>
+					
+					<!--second pic-->
+					
 
 				</section>
 
@@ -246,11 +261,10 @@
 				<footer id="footer">
 
 					<ul class="icons">
-						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#https://www.twitter.com/libobooks/" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="https://www.instagram.com/libobooks/" class="icon circle fa-instagram"><span class="label">Github</span></a></li>
 					</ul>
 
 					<ul class="copyright">

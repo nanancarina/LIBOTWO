@@ -1,6 +1,8 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
+/*maincolor: #83d3c9*/
+
 /*
 	Twenty by HTML5 UP
 	html5up.net | @ajlkn
@@ -32,6 +34,102 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+#headerWords{
+	font-size: 50px;
+}
+#container{
+	display: grid; 
+	grid-template-columns: 20% 80%; 
+	grid-template-rows: 76px auto;
+	
+}
+
+#sidebar{
+	margin-top: 60%;
+	margin-left:8%;
+	grid-column-start:1;
+	grid-row: 4 span;
+	background-color: inherit;
+}
+
+.book {
+	grid-column-start: span 1; 
+	grid-row-start: 2;  
+}
+
+#headerDiv{
+	grid-row-start: 1 !imprtant;
+	grid-column: 5 span !important;
+}
+
+#bookHolder{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-auto-rows: 300px; 
+}
+
+
+start of sidebar css
+.sidenav {
+    width: 15%;
+    position: relative; 
+    z-index: 1;
+    top: 50%;
+    left: 3%;
+    background: none;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+.main {
+    margin-left: 15%; 
+    font-size: 28px; 
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#subSideNav{
+	margin-left: 16%;
+	font-size: 17px; 
+}
+end of sidebar css
+start of cards
+#title {
+	color: white;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    background-color: white; 
+}
+
+
+.card:hover {
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+end of cards
+
 
 ol, ul {
 	list-style: none;
@@ -113,7 +211,6 @@ input, select, textarea {
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		color: #3fb1a3;
 		text-decoration: none;
-		border-bottom: dotted 1px;
 	}
 
 		a:hover {
@@ -129,7 +226,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: inherit;
+		color: #83d3c9;
 		font-weight: 300;
 		line-height: 1.75em;
 		margin-bottom: 1em;
@@ -137,7 +234,7 @@ input, select, textarea {
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+			color: #83d3c9;
 			text-decoration: none;
 			border: 0;
 		}
@@ -1767,13 +1864,16 @@ input, select, textarea {
 			left: 0;
 			position: absolute;
 			text-align: center;
-			top: 1em;
+			top: 0em;
 			width: 100%;
+			font-size: 40px; 
+			font-family: 'Goudy Bookletter 1911', serif;
 		}
 
 			header.special .icon:before {
 				font-size: 3.5em;
 				opacity: 0.35;
+				color: #83d3c9;
 			}
 
 	footer > :last-child {
@@ -1945,12 +2045,12 @@ input, select, textarea {
 					background: #df7b77;
 				}
 
-			.icon.circle.fa-github {
+			.icon.circle.fa-instagram {
 				background: #dcad8b;
 				color: #fff;
 			}
 
-				.icon.circle.fa-github:hover {
+				.icon.circle.fa-instagram:hover {
 					background: #e1b89b;
 				}
 
@@ -2161,8 +2261,8 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background: #96dad1 !important;
-				border-color: #96dad1 !important;
+				background: #83d3c9 !important;
+				border-color: #83d3c9 !important;
 			}
 
 		input[type="button"].fit,
@@ -2331,7 +2431,7 @@ input, select, textarea {
 
 					#header nav ul li a {
 						border: solid 1px transparent;
-						color: inherit;
+						color: #83d3c9;
 						display: inline-block;
 						line-height: 1em;
 						padding: 0.6em 0.75em;
@@ -2390,7 +2490,7 @@ input, select, textarea {
 			-webkit-animation: none;
 			-ms-animation: none;
 			animation: none;
-			background: transparent;
+			background: white;
 			box-shadow: none;
 			color: #fff;
 			padding: 2em 2.5em;
@@ -2506,7 +2606,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/bookBackground.JPG");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -2525,12 +2625,14 @@ input, select, textarea {
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(52, 27, 43, 0.5);
+			background: transparent;
 			color: #fff;
 			display: inline-block;
 			opacity: 0;
 			padding: 3em;
-			text-align: center;
+			text-align: left;
+			margin-top: 25vh; 
+			height: 40vh;
 		}
 
 			#banner .inner header {
@@ -2572,7 +2674,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+		/*background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");*/
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
 		background-size: 25em;
@@ -2622,10 +2724,10 @@ input, select, textarea {
 	#footer {
 		background: #E8EEF4;
 		color: #7c8081;
-		padding: 5em 5em 10em 5em;
+		padding: 5em 5em 5em 5em;
 		text-align: center;
+		
 	}
-
 		#footer .copyright {
 			font-size: 0.8em;
 			line-height: 1em;
@@ -2647,6 +2749,7 @@ input, select, textarea {
 					padding: 0;
 					border: 0;
 				}
+				
 
 /* Wide */
 
