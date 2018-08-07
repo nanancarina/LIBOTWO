@@ -34,7 +34,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
+#cname{
+	
+}
 
 * {
   box-sizing: border-box;
@@ -1964,7 +1966,7 @@ input, select, textarea {
 			cursor: default;
 			height: 7em;
 			left: 0;
-			position: absolute;
+			/*position: absolute;*/
 			text-align: center;
 			top: 0em;
 			width: 100%;
