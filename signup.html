@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Authentication Practice</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        
+       
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB9IZju_GBvKqYtoS5GNfLZKymyywG8YIU",
+    authDomain: "libo-sign-up.firebaseapp.com",
+    databaseURL: "https://libo-sign-up.firebaseio.com",
+    projectId: "libo-sign-up",
+    storageBucket: "libo-sign-up.appspot.com",
+    messagingSenderId: "696202846555"
+  };
+  firebase.initializeApp(config);
+</script>
+    </head>
+    
+    <body>
+       <button id= "button">Log in with Google</button>
+       <button id = "outButton">Sign out</button>
+       <div id ="user">    </div> 
+       <div id = "email"></div>
+       <div id = "picture"></div>
+       <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
