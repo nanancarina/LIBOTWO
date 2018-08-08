@@ -1,6 +1,5 @@
 let loginButton=document.querySelector("#button")
 let userDiv= document.querySelector("#user")
-
 // let logoutButton = document.querySelector("#outButton")
 
 loginButton.addEventListener("click",e=>{
