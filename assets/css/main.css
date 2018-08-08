@@ -34,12 +34,20 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-#cname{
-	
+.wrapperTwo{
+background-color:white;
 }
-
+#collect{
+	color:solid #3caa9d !important;
+}
+#check{
+	color:#3caa9d !important;
+}
 * {
   box-sizing: border-box;
+}
+#process {
+	font-size: 20px;
 }
 
 .row {
@@ -1942,7 +1950,7 @@ input, select, textarea {
 			opacity: 0.1;
 			position: absolute;
 			top: 1.75em;
-			width: 43%;
+			width: 50%;
 		}
 
 		header.special:before {
